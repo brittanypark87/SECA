@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- import bootstrap full CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <title>working copy</title>
+
+</head>
+
+<body>
+
+    <nav id="navbar">
+
+        <a href="#header_img" class="seca">Home</a>
+        <a href="#about_title" class="nav-link">About</a>
+        <a href="#donate_title" class="nav-link">Donate</a>
+        <!--need new page links for other animals and contact  -->
+        <a href="#animals" class="nav-link">Animals</a>
+        <a href="#ContactUs" class="nav-link">Contact</a>
+        <div class='logo'>
+            <img src="./images/sample2.png" id="logo">
+        </div>
+
+    </nav>
+
+
+    <header>
+        <div id="header_img"></div>
+
+    </header>
+
+
+
+
+    <div id="donate_section">
+
+        <div>
+
+            <h3 id="donate_title">Donate</h3>
+            <!-- replace donate text -->
+            <h4 id="donate_text">
+                With so many species of cats on the verge of extinction, our mission is to take conservation
+                measures to help save all endangered cats. Which includes
+                improving habitats, translocating,
+                reintroducing and monitoring all species of cats. The monies raised will help support animal preserves
+                and contuiue the education and preservation these animals.<br><br>
+                If you feel like you would like to help but are unable to donate money, please <a id='linkcon'
+                    href='#ContactUs'>contact us</a> to find out what you can do to help these endangered animals.
+                <br><br><span id='donspan'> Help us save wildlife. Donate today.</span>
+
+            </h4>
+            <!-- attach button to donate form -->
+            <button onclick="document.getElementById('donate-form').style.display='block'">Donate Now</button>
+            <div id="donate-form" class="modal">
+                <form class="modal-content" action="/action">
+                    <div class="row container2" id='donateForm'>
+                        <div class="row">
+                            <div class="col-50">
+                                <h3>Billing Address</h3>
+                                <label class='label' for="fname">Full Name</label>
+                                <input class='input' type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                                <label class='label' for="email">Email</label>
+                                <input class='input' type="text" id="email" name="email" placeholder="john@example.com">
+                                <label class='label' for="adr">Address</label>
+                                <input class='input' type="text" id="adr" name="address"
+                                    placeholder="542 W. 15th Street">
+                                <label class='label' for="city">City</label>
+                                <input class='input' type="text" id="city" name="city" placeholder="New York">
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label class='label' for="state">State</label>
+                                        <input class='input' type="text" id="state" name="state" placeholder="NY">
+                                    </div>
+                                    <div class="col-25">
+                                        <label class='label' for="zip">Zip</label>
+                                        <input class='input' type="text" id="zip" name="zip" placeholder="10001">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-50" id='payment'>
+                                <h3>Payment</h3>
+                                <label class='label' for="fname">Accepted Cards</label>
+                                <ul>
+                                    <li><strong>Visa</strong></li>
+                                    <li><strong>Mastercard</strong></li>
+                                </ul>
+                                <label class='label' for="cname">Name on Card</label>
+                                <input class='input' type="text" id="cname" name="cardname" placeholder="John More Doe">
+                                <label class='label' for="ccnum">Credit card number</label>
+                                <input class='input' type="text" id="ccnum" name="cardnumber"
+                                    placeholder="1111-2222-3333-4444">
+                                <label class='label' for="expmonth">Exp Month</label>
+                                <input class='input' type="text" id="expmonth" name="expmonth" placeholder="September">
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label class='label' for="expyear">Exp Year</label>
+                                        <input class='input' type="text" id="expyear" name="expyear" placeholder="2018">
+                                    </div>
+                                    <div class="col-25">
+                                        <label class='label' for="cvv">CVV</label>
+                                        <input class='input' type="text" id="cvv" name="cvv" placeholder="352">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <button type="button" onclick="document.getElementById('donate-form').style.display='none'"
+                                class="cancelbtn">Cancel</button>
+                            <button type="submit" class="signupbtn">Donate Now</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+
+
+
+
+
+        </div>
+        <div class='carddiv1'>
+            <div class="card">
+                <img src="./images/andeanmountaincat.jpg" class="card-img-top" id="andean_img" alt="andean cat" />
+                <div class="card-body">
+                    <h5 class="card-title">Andean Cat</h5>
+                    <p class="card-text"><span>Geographic Location:</span> High Andes Mountains<br>
+                        <span>How Many:</span> Fewer than 2500 are left<br>
+                        <span>Habitat:</span> This terrain is arid, sparsely vegetated, rocky and steep<br>
+                        <span>Threats:</span> Loss of habitat, hunting and disease are all contributing factors.</p>
+
+                </div>
+            </div>
+            <!-- put info on card -->
+            <div class="card">
+                <img src="./images/tiger1.jpg" class="card-img-top" id="tiger_img" alt="tiger" />
+                <div class="card-body">
+                    <h5 class="card-title">Tiger</h5>
+                    <p class="card-text"><span>Geographic Location:</span> Siberian temperate forests, to subtropical
+                        and tropical forests and Sumatra.<br>
+                        <span>How Many:</span> Between 3,062 - 3,948 are left.<br>
+                        <span>Habitat:</span> These forest are tropical and subtropical moist broadleaf forests as well
+                        as, moist evergreen forests, tropical dry forests and swamp forests.<br>
+                        <span>Threats:</span> Loss of habitat, disease, and other predators like crocodiles, bears, and
+                        large packs of dholes.</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+
+    <div id="about_section">
+        <div class='carddiv2'>
+            <!-- put info on card -->
+            <div class="card">
+                <img src='./images/Iberian lynx2.jpg' class="card-img-top" id="iberian_img" alt="iberian lynx" />
+
+                <div class="card-body">
+                    <h5 class="card-title">Iberian Lynx</h5>
+                    <p class="card-text"><span>Geographic Location:</span> Sierra Morena and Montes de Toledo of
+                        Castilla-La Mancha, Spain, and Portugal.<br>
+                        <span>How Many:</span> Fewer than 1,111<br>
+                        <span>Habitat:</span> Largely restricted to mountainous areas.<br>
+                        <span>Threats:</span> Habitat loss, road accidents, and illegal hunting.</p>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/baycat.jpg" class="card-img-top" id="borneo_img" alt="borneo bay cat" />
+                <div class="card-body">
+                    <h5 class="card-title">Borneo Bay Cat</h5>
+                    <p class="card-text"><span>Geographic Location:</span> The island of Borneo<br>
+                        <span>How Many:</span> Fewer than 2500 are left<br>
+                        <span>Habitat:</span> Lowland, hill, or swamp forests<br>
+                        <span>Threats:</span> This cat is dependant on forest and therefore threatened by deforestation
+                    </p>
+
+                </div>
+            </div>
+            <!-- put info on card -->
+            <div class="card">
+                <img src="./images/flatheadedcat.jpg" class="card-img-top" id="flat-headed_img" alt="flat-headed cat" />
+                <div class="card-body">
+                    <h5 class="card-title">Flat Headed Cat</h5>
+                    <p class="card-text"><span>Geographic Location:</span> Thai-Malay Peninsula, Borneo, and
+                        Sumatra.<br>
+                        <span>How Many:</span> 2,500 mature individuals, with small
+                        subpopulations of no more than 250 adults.<br>
+                        <span>Habitat:</span> Lowland tropical
+                        rainforests, freshwater habitats near coastal and lowland areas.<br>
+                        <span>Threats:</span> Wetland and lowland forest destruction and
+                        degradation.</p>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div id="about">
+            <!-- fill in about text -->
+            <h3 id="about_title">About Us</h3>
+            <h4 class="about_text">The SECA association aims at fostering research and conservation of endangered
+                cats, as well as, all endangered animals. Our goal is to fully protect these animals with national
+                legislation
+                in all countries that have an animal on the endangered list. We are trying to stop the hunting and trade
+                of
+                these animals as well as support as many wildlife perserves as possible. Our mission is to protect these
+                animals by continued education and preservation.
+
+            </h4>
+        </div>
+
+    </div>
+    <hr>
+    <!-- attach link to separate page -->
+
+
+
+    <!-- <a class='see' href="#" target="_blank">See more Cats</a> -->
+
+
+    <div id="footer">
+        <img src="./images/logo3.png" id="seca1">
+
+        <div class="contact" id='ContactUs'>
+            <h3>Contact Us:</h3>
+            <p> 132 N. Animal Ave <br>
+                Lion, Idaho 44203 <br>
+                236-555-4515 <br>
+                seca@gmail.com</p>
+        </div>
+        <!-- add info about newsletter -->
+        <div class='subscribe'>
+            <h3 id='subtitle'>Subscribe</h3>
+            <p>Subscribe to our monthly newsletter</p>
+            <!-- attach button to colapsible div to sign up -->
+            <button class='btn' id='subbtn'>Subscribe Today</button>
+            <form action="/action" id='subform'>
+                <div class="container">
+                    <h2>Subscribe to our Newsletter</h2>
+                    <p>Get more information on your favorite big cats and how you can help.</p>
+                </div>
+
+                <div class="container" id='form'>
+                    <input class='sub' type="text" placeholder="Name" name="name" required>
+                    <input class='sub' type="text" placeholder="Email address" name="mail" required>
+                </div>
+
+                <div class="container">
+                    <input class='btn' type="submit" value="Subscribe" id='subscribe'>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- import jquery -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

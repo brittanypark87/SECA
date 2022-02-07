@@ -1,0 +1,144 @@
+body{
+    background-color: #acacac;
+}
+#navbar{
+    position: fixed;
+    width: 40.7%;
+    padding-left: 58%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    letter-spacing: 5px;
+    /* opacity: 0.5; */
+   
+  
+}  
+#navbar a {
+   float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }   
+#navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+.nav-link{
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+.seca{
+position: absolute;
+left: 5px;
+text-decoration: none;
+color: black;
+font-size: 40px;
+}
+#header_img{
+width: 99.6%;
+height: 25vh;
+}
+
+/* about */
+#about_title{
+    font-size: 50px;
+    margin-left: 15%;
+}
+/* need to add about section */
+.about_text{
+    position: absolute;
+    right: 55%;
+    top: 45%;
+
+    
+}
+#borneo_img{
+    width: 100%;
+    height: 50%;
+    margin-right: 10%;
+   
+ 
+}
+/* donate */
+#donate_title{
+    font-size: 50px;
+    margin-left: 69%;
+}
+#donate_section{
+    display: flex;
+    flex-direction: row-reverse;
+}
+#donate_text{
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 10%;
+}
+
+#andean_img{
+    width: 100%;
+
+    
+}
+/* three cat pics */
+
+#iberian_img{
+    width: 32%;
+    border-radius: 10%;
+}
+#tiger_img{
+    width: 32%;
+    border-radius: 10%;  
+}
+#flat-headed_img{
+    width: 32%;
+    border-radius: 10%;
+}
+/* footer */
+#footer{
+    font-size: 30px;
+    text-align: center;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 30vw; 
+    height: 100vh;
+    background-color: #7f7f7f;
+    position: relative;
+   left: 65%;
+    bottom: 100px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+  #cats {
+      background-color: darkgray;
+  }
+  .card1 {
+      background-color: #7f7f7f;
+      width: 150vw;
+  }
+  #newcat {
+    width: 40vw;
+    height: 60vh;
+    position: absolute;
+    right: 5%;
+    top: 203%;
+  }
+  
+  
+  #newcat1 {
+      width: 40vw;
+      height: 60vh;
+      position: relative;
+      left: 5%;
+      top: 200%;
+  }
